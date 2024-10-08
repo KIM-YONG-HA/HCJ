@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<style>
+
+table input[type='text'],
+table input[type='email']  {width:300px}
+</style>
+
+
+
+
+<h1>회원 가입을 환영합니다</h1>
+
+<form action="">
+    <fieldset>
+        <legend>사용자 정보</legend>
+
+        <ul>
+            <li>아이디 <input type="text" name="usrID"></li>
+            <li>이메일 <input type="email" name="usrEmail"></li>
+            <li>비밀번호 <input type="password"></li>
+            <li>비밀번호 확인 <input type="password"></li>
+        </ul>
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+
+        <label><input type="radio"  name="newsletter" value="Y">메일 수신</label>
+        <label><input type="radio"  name="newsletter" value="N">메일 수신 안함 </label>
+
+    </fieldset>
+
+    <input type="submit" value="가입하기"><input type="reset" value="취소">
+
+    <br><br><br><br><br>
+    <fieldset>
+    <legend>배송정보</legend>
+
+
+    <table>
+        <colgroup>
+        <col style="width:80px">
+        <col style="width:*">
+        </colgroup>
+        <tr>
+            <td>이름</td>
+            <td><input type="text" name="usrName"></td>
+        </tr>
+        <tr>
+            <td>배송 주소</td>
+            <td><input type="text" name="usrAddr"></td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="email" name="usrEmail"></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td><input type="text" name="usrTel" placeholder="하이픈 빼고 입력해주세요(01012345678)"></td>
+        <tr>
+            <td>배송지정</td>
+            <td><input type="date">(주문일로부터 최소 3일 이후)</td>
+        </tr>
+
+    </table>
+
+    </fieldset>
+
+
+
+</form>
+
+
+</body>
+</html>

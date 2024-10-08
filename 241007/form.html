@@ -30,29 +30,19 @@
         <input type="url" name="" id="" placeholder="url">
         <input type="email" name="" id="" placeholder="email">
         
-
         <br><br>
-
 
         <input type="checkbox" name="hobby[]" id="">11
         <input type="checkbox" name="hobby[]" id="">22
         <input type="checkbox" name="hobby[]" id="">33
         
-        
         <br><br>
         <input type="radio" name="gender" id="genderM">남
         <input type="radio" name="gender" id="">여
 
-
         <br><br>
 
         <input type="number" name="" id="">
-
-
-
-
-
-
 
     </fieldset>
 
@@ -60,6 +50,67 @@
 </form>
 
 
+
+
+
+<form id="myID" name="myName" class="my_class" action="test.php" method="get" onsubmit="return validator()">
+<input type="text">
+<input type="submit" value="전송">
+</form>
+
+
+
+
+<script>
+
+var frm1 = document.getElementById("myID");
+var frm2 = document.getElementsByClassName("my_class");
+var frm3 = document.getElementsByName("myName");
+var frm4 = document.getElementsByTagName("form");
+
+
+console.log("frm1 : " + frm1);
+console.log("frm2 : " + frm2);
+console.log("frm3 : " + frm3);
+console.log("frm4 : " + frm4);
+
+
+
+
+</script>
+
+
+
+
+<!-- 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(function(){
+
+console.log($("#myTest input[type='text']").val());
+
+
+})
+
+
+
+
+function validator(){
+
+if($("#myTest input[type='text']").val() == ''){
+
+alert('값이 없음');
+return false;
+
+}
+
+return false;
+
+}
+
+
+</script> -->
 
 
 
