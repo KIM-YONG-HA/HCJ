@@ -10,8 +10,8 @@
 
 <style>
 
-table input[type='text'],
-table input[type='email']  {width:300px}
+/* table input[type='text'],
+table input[type='email']  {width:300px} */
 </style>
 
 
@@ -24,7 +24,7 @@ table input[type='email']  {width:300px}
         <legend>사용자 정보</legend>
 
         <ul>
-            <li>아이디 <input type="text" name="usrID"></li>
+            <li>아이디 <input type="text" name="usrID" autofocus></li>
             <li>이메일 <input type="email" name="usrEmail"></li>
             <li>비밀번호 <input type="password"></li>
             <li>비밀번호 확인 <input type="password"></li>
@@ -56,22 +56,22 @@ table input[type='email']  {width:300px}
         </colgroup>
         <tr>
             <td>이름</td>
-            <td><input type="text" name="usrName"></td>
+            <td><input type="text" name="usrName" size="36"></td>
         </tr>
         <tr>
             <td>배송 주소</td>
-            <td><input type="text" name="usrAddr"></td>
+            <td><input type="text" name="usrAddr" size="36"></td>
         </tr>
         <tr>
             <td>이메일</td>
-            <td><input type="email" name="usrEmail"></td>
+            <td><input type="email" name="usrEmail" size="36"></td>
         </tr>
         <tr>
             <td>연락처</td>
-            <td><input type="text" name="usrTel" placeholder="하이픈 빼고 입력해주세요(01012345678)"></td>
+            <td><input type="text" name="usrTel" placeholder="하이픈 빼고 입력해주세요(01012345678)" size="36"></td>
         <tr>
             <td>배송지정</td>
-            <td><input type="date">(주문일로부터 최소 3일 이후)</td>
+            <td><input type="date" min="2024-10-01" max="2024-11-15"><small>(주문일로부터 최소 3일 이후)</small></td>
         </tr>
 
     </table>
